@@ -26,6 +26,21 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
+    position: relative;
+}
+
+.links a:hover {
+    text-decoration: none;
+}
+
+.links a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
 }
 
 .profilePicture {
