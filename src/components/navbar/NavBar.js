@@ -5,7 +5,9 @@ const NavBar = () => {
     return (
         <div className={style.container}>
             <div className={style.profilePicture}>
-                <img src={require('../../assets/ProfilePicture.png')} alt='Profile' />
+                <a href='/'>
+                    <img src={require('../../assets/ProfilePicture.png')} alt='Profile' />
+                </a>
             </div>
             <div className={style.links}>
                 <a href='skills'>Skills</a>
