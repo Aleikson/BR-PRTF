@@ -17,13 +17,16 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className={Style.container}>
-      {svgData.map((svg, index) => (
-        <div key={index} className={Style.item}>
-          <img src={svg.path} alt={svg.name} />
-        </div>
-      ))}
-    </div>
+    <>
+      <h1>Skills</h1>
+      <div className={Style.container}>
+        {svgData.map((svg, index) => (
+          <div key={index} className={Style.item}>
+            <img src={svg.path} alt={svg.name} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

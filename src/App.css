@@ -14,11 +14,6 @@
   grid-row: 1 / span 2;
 }
 
-.content {
-  display: grid;
-  align-content: center;
-}
-
 html {
   background: #2A3443;
 }
