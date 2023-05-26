@@ -1,8 +1,9 @@
 import './App.css';
 import NavBar from './components/navbar/NavBar';
 import Perfil from './components/perfil/Perfil';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Skills from './components/skills/Skills';
+import Experience from './components/experience/Experience';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
           <div className="perfilContainer">
             <Perfil />
           </div>
-          <div className="content">
+          <div>
             <Routes>
               <Route path='/' />
               <Route path="/Skills" element={<Skills />} />
+              <Route path='/Experience' element={<Experience />} />
             </Routes>
           </div>
         </div>
