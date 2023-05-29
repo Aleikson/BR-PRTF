@@ -2,7 +2,8 @@ import './App.css';
 import NavBar from './components/navbar/NavBar';
 import Perfil from './components/perfil/Perfil';
 import Skills from './components/skills/Skills';
-import Experience from './components/experience/Experience';
+import Experience from './components/experience/ProjectItem';
+import Contact from './components/contactMe/Contact';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route path='/' />
               <Route path="/Skills" element={<Skills />} />
               <Route path='/Experience' element={<Experience />} />
+              <Route path='/Contact' element={<Contact />} />
             </Routes>
           </div>
         </div>
