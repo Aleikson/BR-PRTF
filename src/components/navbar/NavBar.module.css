@@ -17,7 +17,7 @@
     flex-grow: 1;
 }
 
-.links a {
+.links Link {
     margin-left: 20px;
     color: #ffffff;
     text-decoration: none;
@@ -29,11 +29,11 @@
     position: relative;
 }
 
-.links a:hover {
+.links Link:hover {
     text-decoration: none;
 }
 
-.links a:hover::after {
+.links Link:hover::after {
     content: "";
     position: absolute;
     left: 0;
