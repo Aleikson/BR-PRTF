@@ -1,32 +1,43 @@
-import React, { useEffect, useState } from 'react';
-import Style from './Skills.module.css'
+import React from 'react';
+import Style from './Skills.module.css';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaReact,
+  FaGitAlt,
+} from 'react-icons/fa';
+import { DiJqueryLogo } from 'react-icons/di';
+import { SiJavascript, SiTypescript, SiFirebase, SiStyledcomponents } from 'react-icons/si';
 
 const Skills = () => {
-  const [svgData, setSvgData] = useState([]);
-
-  useEffect(() => {
-    const importAll = (requireContext) => requireContext.keys().map(requireContext);
-    const svgFiles = importAll(require.context('../../assets/SvgSkills', true, /\.svg$/));
-
-    const loadedSvgs = svgFiles.map((svgFile) => ({
-      name: svgFile.split('/').pop().split('.')[0],
-      path: svgFile,
-    }));
-
-    setSvgData(loadedSvgs);
-  }, []);
+  const icons = [
+    { icon: FaHtml5, name: 'HTML' },
+    { icon: FaCss3Alt, name: 'CSS' },
+    { icon: FaBootstrap, name: 'Bootstrap' },
+    { icon: SiJavascript, name: 'JavaScript' },
+    { icon: SiTypescript, name: 'TypeScript' },
+    { icon: DiJqueryLogo, name: 'jQuery' },
+    { icon: FaReact, name: 'React' },
+    { icon: SiStyledcomponents, name: 'Styled Components' },
+    { icon: FaGitAlt, name: 'Git' },
+    { icon: SiFirebase, name: 'Firebase' },
+  ];
 
   return (
-    <>
-      <h1>Skills</h1>
-      <div className={Style.container}>
-        {svgData.map((svg, index) => (
-          <div key={index} className={Style.item}>
-            <img src={svg.path} alt={svg.name} />
+    <div className={Style.container}>
+
+    <div className={Style.containerGrid}>
+      {icons.map((item, index) => (
+        <div key={index} className={Style.item}>
+          <div className={Style['iconContainer']}>
+            {React.createElement(item.icon)}
           </div>
-        ))}
-      </div>
-    </>
+          <span className={Style.name}>{item.name}</span>
+        </div>
+      ))}
+    </div>
+    </div>
   );
 };
 
