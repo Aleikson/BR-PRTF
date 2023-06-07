@@ -1,19 +1,16 @@
 .App {
-  display: grid;
-  grid-template-rows: auto 1fr;
   min-height: 100vh;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 350px 1fr;
-  grid-gap: 20px;
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
 }
 
 .perfil {
   grid-row: 1 / span 2;
 }
 
-html {
-  background: #2A3443;
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
 }

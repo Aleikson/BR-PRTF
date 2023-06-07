@@ -1,23 +1,57 @@
-import React from 'react'
-import style from './NavBar.module.css'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import style from './NavBar.module.css';
+
 
 const NavBar = () => {
+    const [name, setName] = useState('');
+
+    useEffect(() => {
+        const targetName = "< Home />";
+        let currentIndex = 0;
+        let isDeleting = false;
+
+        const animateTyping = () => {
+            const currentName = targetName.slice(0, currentIndex);
+
+            setName(currentName);
+
+            if (!isDeleting) {
+                currentIndex++;
+
+                if (currentIndex > targetName.length) {
+                    isDeleting = true;
+                    currentIndex = targetName.length;
+                }
+            } else {
+                currentIndex--;
+
+                if (currentIndex === 0) {
+                    isDeleting = false;
+                    currentIndex = 0;
+                }
+            }
+        };
+
+        const intervalId = setInterval(animateTyping, 250);
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, []);
+
     return (
         <div className={style.container}>
-            <div className={style.profilePicture}>
-                <a href='/'>
-                    <img src={require('../../assets/ProfilePicture.png')} alt='Profile' />
-                </a>
-            </div>
+            <a href="/" className={style.nameLink}>
+                {name}
+            </a>
             <div className={style.links}>
-                <Link to='skills'>Skills</Link>
-                <Link to='experience'>Experiência</Link>
-                <Link to='portfolio'>Portfolio</Link>
-                <Link to='contact'>Contato</Link>
+                <a href="experience">Experiência</a>
+                <a href="perfil">Sobre</a>
+                <a href="skills">Skills</a>
+                <a href="portfolio">Portfolio</a>
             </div>
         </div>
-    )
+    );
 };
 
-export default NavBar
+export default NavBar;
