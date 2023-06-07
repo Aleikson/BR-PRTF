@@ -1,0 +1,63 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.description {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.description p {
+  text-align: right;
+  color: #e3e3e3;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h2 {
+  color: #C0C0C0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.home h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: -5px;
+  font-style: normal;
+  font-size: 105px;
+  color: #ffffff;
+  line-height: 80px;
+  margin: 0;
+}
+
+.role2 {
+  margin-top: 10px;
+}
