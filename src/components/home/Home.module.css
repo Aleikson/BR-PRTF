@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
 }
 
 .subtitle {
@@ -60,4 +59,37 @@
 
 .role2 {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .home h1 {
+    font-size: 62px;
+    line-height: 45px;
+  }
+
+  .subtitle {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .description p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .title {
+    justify-content: center;
+  }
+
+  .title h2 {
+    font-size: 15px;
+  }
 }
