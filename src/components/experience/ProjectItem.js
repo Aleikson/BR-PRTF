@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Experience from '../experience/Experience';
-import TestImage from '../../assets/projeto1.png';
+import project1 from '../../assets/projeto1.png';
+import project2 from '../../assets/projeto2.png';
 import Style from './Experience.module.css'
 
 const ProjectItem = () => {
@@ -13,7 +14,7 @@ const ProjectItem = () => {
         'Durante o desenvolvimento deste projeto, aprendi a utilizar as tecnologias mencionadas acima, além de aprimorar minhas habilidades em design de interface de usuário e desenvolvimento de front-end.',
         'Este projeto demonstra minha habilidade em desenvolver soluções de front-end atraentes e funcionais para aplicações web, além de minha capacidade de aprender novas tecnologias e aplicá-las em projetos reais.'
       ],
-      image: TestImage,
+      image: project1,
       page: '',
       link: 'https://github.com/Aleikson/ExampleOfEcommerce'
     },
@@ -24,7 +25,7 @@ const ProjectItem = () => {
         'Além disso, o site apresenta frases motivacionais para incentivar o usuário a manter o foco e a produtividade. Durante o desenvolvimento deste projeto, aprimorei minhas habilidades de desenvolvimento front-end, bem como na integração do Firebase ao projeto.',
         'Este projeto demonstra minha capacidade de desenvolver soluções eficazes para problemas cotidianos, bem como minha habilidade em trabalhar com tecnologias front-end e back-end. Além disso, o projeto ilustra minha capacidade de aprender e aplicar novas tecnologias para melhorar a qualidade das minhas soluções.'
       ],
-      image: TestImage,
+      image: project2,
       page: '',
       link: 'https://github.com/Aleikson/PlanNote'
     }
