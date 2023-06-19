@@ -8,11 +8,13 @@ import Experience from './components/experience/ProjectItem';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
-      <Perfil />
-      <Skills />
-      <Experience />
+      <div className="wrapper">
+        <NavBar />
+        <Home />
+        <Perfil />
+        <Skills />
+        <Experience />
+      </div>
     </div>
   );
 }
