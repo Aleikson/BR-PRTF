@@ -13,17 +13,15 @@ const Perfil = () => {
   }
 
   return (
-    <>
+    <div id='perfil' className={Style.wrapper}>
       <h2 className={Style.title}>Sobre mim</h2>
       <div className={Style.container}>
         <div className={Style.picture}>
-          <div class={Style.neonShapes}></div>
           <img src={require('../../assets/ProfilePicture.png')} alt='Profile' />
         </div>
         <div className={Style.description}>
-          <div class={Style.neonInverted}></div>
           <p>Olá, meu nome é Aleikson e sou um desenvolvedor Frontend focado em criar experiências envolventes e intuitivas na web. Com sólidos conhecimentos em JavaScript e ReactJS, estou constantemente explorando novas possibilidades e aprimorando minhas habilidades para entregar soluções de alta qualidade.</p>
-          <p>Ao navegar por este portfolio, você encontrará uma coleção dos meus projetos mais recentes, nos quais tive a oportunidade de aplicar meu conhecimento em programação e design. Cada projeto reflete meu compromisso em criar interfaces funcionais e atraentes, com ênfase na usabilidade e na experiência do usuário.</p>
+          <p>Ao navegar por este portfolio, você encontrará projetos recentes. Cada projeto reflete meu compromisso em criar interfaces funcionais e atraentes, com ênfase na usabilidade e na experiência do usuário.</p>
           <div className={Style.content}>
             <button className={Style.btn} onClick={handleButton}>Baixar Currículo</button>
             <a className={Style.contactItem} href="mailto:aleiksonsilva@hotmail.com">
@@ -37,7 +35,7 @@ const Perfil = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

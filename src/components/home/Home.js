@@ -5,7 +5,7 @@ import Contact from '../contactMe/Contact';
 const Home = () => {
   return (
     <div className={Style.home}>
-      <div className={Style.subtitle}>
+      <div className={Style.content}>
         <div className={Style.title}>
           <h2>Olá, eu sou o Aleikson</h2>
           <Contact />
