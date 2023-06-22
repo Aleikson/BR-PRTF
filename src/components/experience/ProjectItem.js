@@ -46,7 +46,7 @@ const ProjectItem = () => {
   return (
     <div className={Style.containerItem}>
       {projects.map((project, index) => (
-        <div key={index}>
+        <div key={index} className={Style.content}>
           <Experience
             title={project.title}
             description={[]}
