@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaPhone, FaWhatsapp, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
 import Style from './Contact.module.css'
 
 const Contact = () => {
@@ -17,7 +18,7 @@ const Contact = () => {
       </div>
       <div className={Style.container}>
         <a className={Style.contactItem} href="https://api.whatsapp.com/send?phone=99984557469">
-          <FaWhatsapp className={Style.icon} />
+          <BsLinkedin className={Style.icon} />
         </a>
       </div>
       <div className={Style.container}>

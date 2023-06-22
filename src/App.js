@@ -4,6 +4,7 @@ import NavBar from './components/navbar/NavBar';
 import Perfil from './components/perfil/Perfil';
 import Skills from './components/skills/Skills';
 import Experience from './components/experience/ProjectItem';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Perfil />
         <Skills />
         <Experience />
+        <Footer />
       </div>
     </div>
   );

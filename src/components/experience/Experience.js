@@ -3,7 +3,7 @@ import Style from './Experience.module.css';
 
 const Experience = ({ title, description, image, page, link, onOpenModal }) => {
   return (
-    <div className={Style.container}>
+    <div id='experience' className={Style.container}>
       <h2 className={Style.title}>{title}</h2>
       <div className={Style.imgContent}>
         <img src={image} alt="" />

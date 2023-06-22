@@ -17,16 +17,16 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.container a:hover {
+  transform: translateY(-5px) scale(1.08);
+  color: #ffffff;
 }
 
 .icon {
   width: 70%;
   height: 70%;
   color: #FFEDB3;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: translateY(-5px) scale(1.08);
-  color: #ffffff;
 }

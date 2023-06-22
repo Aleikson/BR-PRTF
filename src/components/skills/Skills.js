@@ -26,14 +26,14 @@ const Skills = () => {
   ];
 
   const technologies = [
-    { icon: SiRedux, color: '#764ABC' },
+    { icon: SiRedux, color: '#764ABC', rotate: true },
     { icon: FaNodeJs, color: '#83CD29' },
     { icon: SiExpress, color: '#000000' },
     { icon: SiMysql, color: '#4479A1' },
   ];
 
   return (
-    <div className={Style.container}>
+    <div id='skills' className={Style.container}>
       <h2 className={Style.title}>Habilidades</h2>
       <div className={Style.containerGrid}>
         {icons.map((item, index) => {
@@ -48,6 +48,7 @@ const Skills = () => {
           );
         })}
       </div>
+      <h2 className={Style.title}>Em progresso</h2>
       <div className={Style.technologyContainer}>
         {technologies.map((item, index) => {
           const IconComponent = item.icon;
@@ -56,7 +57,8 @@ const Skills = () => {
           };
           return (
             <div key={index} className={Style.technologyItem}>
-              <div className={`${Style.load} ${Style.rotateAnimation}`} style={{ borderColor: `transparent transparent ${item.color} transparent` }}>
+              <div className={Style.load} >
+                <div className={Style.rotateContainer} style={{ borderColor: `transparent transparent ${item.color} transparent` }}></div>
                 <IconComponent style={iconStyle} className={Style.icon} />
               </div>
               <div className={Style.name}>{item.name}</div>
