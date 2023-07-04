@@ -1,7 +1,8 @@
 import React from 'react'
 import Style from './Perfil.module.css'
 import CV from '../../assets/CV.pdf'
-import { FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
 
 const Perfil = () => {
 
@@ -28,9 +29,9 @@ const Perfil = () => {
               <FaEnvelope className={Style.icon} />
               aleiksonsilva@hotmail.com
             </a>
-            <a className={Style.contactItem} href="https://wa.me/5599984557469">
-              <FaPhone className={Style.icon} />
-              (99) 98455-7469
+            <a className={Style.contactItem} href="https://www.linkedin.com/in/aleikson-frontend/">
+              <BsLinkedin className={Style.icon} />
+              linkedin/aleikson
             </a>
           </div>
         </div>

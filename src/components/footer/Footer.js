@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaEnvelope, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaGithub } from 'react-icons/fa';
+import { BsLinkedin } from 'react-icons/bs';
 import Style from './Footer.module.css';
 
 const Footer = () => {
@@ -16,14 +17,14 @@ const Footer = () => {
           </a>
         </div>
         <div className={Style.content}>
-          <a href="https://wa.me/5599984557469">
-            <FaPhone className={Style.contactIcon} />
-            <spam className={Style.contactText}>+55 99984-557469</spam>
+          <a href="https://www.linkedin.com/in/aleikson-frontend/">
+            <BsLinkedin className={Style.contactIcon} />
+            <spam className={Style.contactText}>linkedin/Aleikson</spam>
           </a>
         </div>
         <div className={Style.content}>
           <a href="https://github.com/Aleikson">
-            <FaWhatsapp className={Style.contactIcon} />
+            <FaGithub className={Style.contactIcon} />
             <spam className={Style.contactText}>github.com/Aleikson</spam>
           </a>
         </div>

@@ -15,13 +15,13 @@ const Skills = () => {
   const icons = [
     { icon: FaHtml5, name: 'HTML', color: '#E34C26' },
     { icon: FaCss3Alt, name: 'CSS', color: '#2965F1' },
-    { icon: FaBootstrap, name: 'Bootstrap', color: '#563D7C' },
     { icon: SiJavascript, name: 'JavaScript', color: '#F7DF1E' },
-    { icon: SiTypescript, name: 'TypeScript', color: '#3178C6' },
-    { icon: DiJqueryLogo, name: 'jQuery', color: '#0868AC' },
-    { icon: FaReact, name: 'React', color: '#61DAFB' },
-    { icon: SiStyledcomponents, name: 'Styled Components', color: '#DB7093' },
     { icon: FaGitAlt, name: 'Git', color: '#F05032' },
+    { icon: FaReact, name: 'React', color: '#61DAFB' },
+    { icon: SiTypescript, name: 'TypeScript', color: '#3178C6' },
+    { icon: FaBootstrap, name: 'Bootstrap', color: '#563D7C' },
+    { icon: DiJqueryLogo, name: 'jQuery', color: '#0868AC' },
+    { icon: SiStyledcomponents, name: 'Styled Components', color: '#DB7093' },
     { icon: SiFirebase, name: 'Firebase', color: '#FFCB2B' },
   ];
 
@@ -61,7 +61,6 @@ const Skills = () => {
                 <div className={Style.rotateContainer} style={{ borderColor: `transparent transparent ${item.color} transparent` }}></div>
                 <IconComponent style={iconStyle} className={Style.icon} />
               </div>
-              <div className={Style.name}>{item.name}</div>
             </div>
           );
         })}

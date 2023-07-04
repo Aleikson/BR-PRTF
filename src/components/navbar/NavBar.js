@@ -66,7 +66,7 @@ const NavBar = () => {
       </a>
       <div className={`${style.links} ${isMenuOpen ? style.open : ''}`}>
         <a href="#perfil" onClick={handleLinkClick}>Sobre</a>
-        <a href="#skills" onClick={handleLinkClick}>Skills</a>
+        <a href="#skills" onClick={handleLinkClick}>Habilidades</a>
         <a href="#experience" onClick={handleLinkClick}>Experiência</a>
       </div>
       <div className={style.menuIcon} onClick={toggleMenu}>

@@ -15,7 +15,7 @@ const ProjectItem = () => {
         'Este projeto demonstra minha habilidade em desenvolver soluções de front-end atraentes e funcionais para aplicações web, além de minha capacidade de aprender novas tecnologias e aplicá-las em projetos reais.'
       ],
       image: project1,
-      page: '',
+      page: 'https://cupcake-palace.vercel.app/',
       link: 'https://github.com/Aleikson/ExampleOfEcommerce'
     },
     {
@@ -26,7 +26,7 @@ const ProjectItem = () => {
         'Este projeto demonstra minha capacidade de desenvolver soluções eficazes para problemas cotidianos, bem como minha habilidade em trabalhar com tecnologias front-end e back-end. Além disso, o projeto ilustra minha capacidade de aprender e aplicar novas tecnologias para melhorar a qualidade das minhas soluções.'
       ],
       image: project2,
-      page: '',
+      page: 'https://plan-note.vercel.app/',
       link: 'https://github.com/Aleikson/PlanNote'
     }
   ];
@@ -71,7 +71,7 @@ const ProjectItem = () => {
             zIndex: "1"
           },
           content: {
-            width: "40%",
+            width: "50%",
             height: "auto",
             maxHeight: "70%",
             position: "relative",
@@ -80,12 +80,12 @@ const ProjectItem = () => {
       >
         {currentProject && (
           <div>
-            <h2>{currentProject.title}</h2>
-            <ul>
+            <h2 style={{ textAlign: "center" }}>{currentProject.title}</h2>
+            <div style={{ textAlign: "justify" }}>
               {currentProject.description.map((item, index) => (
-                <li key={index}>{item}</li>
+                <p key={index}>{item}</p>
               ))}
-            </ul>
+            </div>
             <button
               onClick={closeModal}
               style={{
