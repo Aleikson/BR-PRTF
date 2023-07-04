@@ -17,7 +17,7 @@
     color: #2e8e9c;
 }
 
-.btnItem:hover{
+.btnItem:hover {
     color: #636363;
 }
 
@@ -25,10 +25,9 @@
     font-size: 2em;
 }
 
-.descriptionContainer{
+.descriptionContainer {
     width: 50%;
     background: #ffffff;
-
 }
 
 .container {
@@ -41,6 +40,7 @@
 .title {
     position: relative;
     top: 100px;
+    z-index: 1;
 }
 
 .btnContainer {
@@ -57,16 +57,25 @@
     height: 100%;
 }
 
-.imgContent img {
+.imgProject {
     display: block;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 75%;
+    max-height: 75%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgProject:hover {
+    transform: scale(1.05);
+}
+
+.imgProject:not(:hover) {
+    transition-delay: 0.3s;
+    transform: scale(1);
 }
 
 .link {
-    background: none;
     border: none;
     border-radius: 3px;
     font-family: 'Inter', sans-serif;
@@ -109,36 +118,87 @@
     align-items: center;
 }
 
+.keyword {
+    color: blue;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 767px) {
 
-    .containerItem{
+    .containerItem {
         flex-direction: column;
+        height: auto;
     }
-    .container{
+
+    .container {
         height: 50%;
     }
 
-    .content{
+    .content {
         height: 50%;
     }
-    
-    .link{
+
+    .link {
         margin: 0;
         text-align: center;
     }
 
-    .btnItem{
+    .btnItem {
         text-align: center;
     }
 
-    .btnContainer{
-        position: static;
+    .btnContainer {
         gap: 5px;
+        margin: 15px;
+        position: static;
     }
 
-    .title{
+    .title {
         text-align: center;
         font-size: 20px;
         position: static;
     }
-  }
+
+    .imgContent:hover img {
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 926px) {
+    .containerItem {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container {
+        height: 50%;
+    }
+
+    .content {
+        height: 50%;
+    }
+
+    .link {
+        margin: 0;
+        text-align: center;
+    }
+
+    .btnItem {
+        text-align: center;
+    }
+
+    .btnContainer {
+        gap: 15px;
+        margin: 25px;
+        position: static;
+    }
+
+    .title {
+        text-align: center;
+        position: static;
+    }
+
+    .imgContent:hover img {
+        transform: scale(1.05);
+    }
+}

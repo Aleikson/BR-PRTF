@@ -17,7 +17,7 @@ const Contact = () => {
         </a>
       </div>
       <div className={Style.container}>
-        <a className={Style.contactItem} href="https://api.whatsapp.com/send?phone=99984557469">
+        <a className={Style.contactItem} href="https://www.linkedin.com/in/aleikson-frontend/">
           <BsLinkedin className={Style.icon} />
         </a>
       </div>

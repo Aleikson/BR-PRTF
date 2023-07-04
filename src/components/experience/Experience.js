@@ -6,7 +6,7 @@ const Experience = ({ title, description, image, page, link, onOpenModal }) => {
     <div id='experience' className={Style.container}>
       <h2 className={Style.title}>{title}</h2>
       <div className={Style.imgContent}>
-        <img src={image} alt="" />
+        <img className={Style.imgProject} src={image} alt="" />
       </div>
       {description.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>

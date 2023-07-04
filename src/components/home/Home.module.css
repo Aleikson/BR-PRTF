@@ -16,6 +16,10 @@
   padding: 20px;
 }
 
+.content h1, .content h2, .content p{
+  cursor: default;
+}
+
 .description {
   display: flex;
   justify-content: flex-end;
