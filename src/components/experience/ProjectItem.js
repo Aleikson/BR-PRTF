@@ -71,10 +71,10 @@ const ProjectItem = () => {
             zIndex: "1"
           },
           content: {
-            width: "50%",
+            width: "70%",
             height: "auto",
             maxHeight: "70%",
-            position: "relative",
+            position: "static"
           },
         }}
       >
