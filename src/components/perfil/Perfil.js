@@ -7,10 +7,7 @@ import { BsLinkedin } from 'react-icons/bs';
 const Perfil = () => {
 
   const handleButton = () => {
-    const link = document.createElement('a')
-    link.href = CV;
-    link.download = ''
-    link.click()
+    window.open(CV, '_blank');
   }
 
   return (
@@ -24,7 +21,7 @@ const Perfil = () => {
           <p>Olá, meu nome é Aleikson e sou um desenvolvedor Frontend focado em criar experiências envolventes e intuitivas na web. Com sólidos conhecimentos em JavaScript e ReactJS, estou constantemente explorando novas possibilidades e aprimorando minhas habilidades para entregar soluções de alta qualidade.</p>
           <p>Ao navegar por este portfolio, você encontrará projetos recentes. Cada projeto reflete meu compromisso em criar interfaces funcionais e atraentes, com ênfase na usabilidade e na experiência do usuário.</p>
           <div className={Style.content}>
-            <button className={Style.btn} onClick={handleButton}>Baixar Currículo</button>
+            <button className={Style.btn} onClick={handleButton}>Visualizar Currículo</button>
             <a className={Style.contactItem} href="mailto:aleiksonsilva@hotmail.com">
               <FaEnvelope className={Style.icon} />
               aleiksonsilva@hotmail.com
