@@ -9,7 +9,7 @@ import {
   FaNodeJs
 } from 'react-icons/fa';
 import { DiJqueryLogo } from 'react-icons/di';
-import { SiJavascript, SiTypescript, SiFirebase, SiStyledcomponents, SiExpress, SiMysql, SiRedux } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiFirebase, SiStyledcomponents, SiExpress, SiMongodb, SiTailwindcss, SiRedux } from 'react-icons/si';
 
 const Skills = () => {
   const icons = [
@@ -29,7 +29,8 @@ const Skills = () => {
     { icon: SiRedux, color: '#764ABC', rotate: true },
     { icon: FaNodeJs, color: '#83CD29' },
     { icon: SiExpress, color: '#000000' },
-    { icon: SiMysql, color: '#4479A1' },
+    { icon: SiMongodb, color: '#13AA52' },
+    { icon: SiTailwindcss, color: '#3490dc' },
   ];
 
   return (
